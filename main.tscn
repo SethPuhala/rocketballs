@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://player1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://dodgeball.tscn" type="PackedScene" id=3]
+[ext_resource path="res://player2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://score.tscn" type="PackedScene" id=5]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1029.27, 1067.28 )
+scale = Vector2( 100, 4 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1186.42, 7.67798 )
+scale = Vector2( 100, 4 )
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -70.7574, 870.481 )
+rotation = 1.5708
+scale = Vector2( 100, 4 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1873.61, -67.9094 )
+rotation = 1.5708
+scale = Vector2( 100, 4 )
+
+[node name="dodge" parent="." instance=ExtResource( 3 )]
+position = Vector2( 203.567, 198.713 )
+
+[node name="player1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 400.542, 183.472 )
+
+[node name="player2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1547.07, 197.818 )
+
+[node name="score" parent="." instance=ExtResource( 5 )]
+margin_left = 828.733
+margin_top = 61.9254
+margin_right = 1026.74
+margin_bottom = 186.925
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+margin_left = -962.265
+margin_top = -1791.14
+margin_right = 3904.74
+margin_bottom = 2054.86
+color = Color( 0.490196, 0, 0.482353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

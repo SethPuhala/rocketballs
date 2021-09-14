@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24.7368, 24.7042 )
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2( 4.59621, 9.8995 )
+z_index = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -30.204
+margin_top = -34.9233
+margin_right = 19.796
+margin_bottom = 15.0767
+color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -5.19133, -9.91067 )
+shape = SubResource( 1 )
